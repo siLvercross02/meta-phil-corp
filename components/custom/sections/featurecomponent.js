@@ -11,27 +11,10 @@ import img5 from "../../../assets/images/features/feature30/feature-img.jpg";
 const FeatureComponent = () => {
   return (
     <div>
-      {/* <div className="spacer bg-light">
-        <Container>
-          <Row className="justify-content-center">
-            <Col md="7" className="text-center">
-              <h1 className="title font-bold">Features</h1>
-              <h6 className="subtitle">
-                Here you can check Demos we created based on WrapKit. Its quite
-                easy to Create your own dream website &amp; dashboard in
-                No-time.
-              </h6>
-            </Col>
-          </Row>
-        </Container>
-      </div> */}
       <div className="spacer feature4">
         <Container>
           <Row className="justify-content-center">
             <Col md="7" className="text-center">
-              <span className="label label-danger label-rounded">
-                Feature 1
-              </span>
               <h2 className="title">Awesome with Extra Ordinary Flexibility</h2>
               <h6 className="subtitle">
                 You can relay on our amazing features list and also our customer

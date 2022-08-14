@@ -10,7 +10,11 @@ const Footer = () => {
         <Row>
           <Col lg="3" md="6" className="m-b-30">
             <h5 className="m-b-20">Address</h5>
-            <p>71 Amsteroum Avenue Cronish Night, NY 35098</p>
+            <p>
+              UNIT 306 ATLSNTICA Star Condo 1221 Navara St. UST Dapitan Brgy 471
+              Zone 046 1008, Sampaloc NCR, City of Manila, First District
+              Philippines
+            </p>
           </Col>
           <Col lg="3" md="6" className="m-b-30">
             <h5 className="m-b-20">Phone</h5>
@@ -74,7 +78,7 @@ const Footer = () => {
                     <a className="link">Meta Phil-Tech Corporation</a>
                   </Link>
                 </div>
-                <div className="links ml-auto m-t-10 m-b-10">
+                {/* <div className="links ml-auto m-t-10 m-b-10">
                   <Link href="#">
                     <a className="p-10 p-l-0">Terms of Use</a>
                   </Link>
@@ -84,7 +88,7 @@ const Footer = () => {
                   <Link href="#">
                     <a className="p-10">Privacy Policy</a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </Col>
           </Row>
