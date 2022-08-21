@@ -1,4 +1,5 @@
 import "../styles/scss/style.scss";
+import "antd/dist/antd.css";
 import Layout from "../layout/Layout";
 
 function MyApp({ Component, pageProps }) {

@@ -9,7 +9,7 @@ export default function Banner() {
   return (
     <div className="static-slider-head banner2">
       <Container>
-        <Row className="">
+        <Row>
           <Col lg="6" md="6">
             {/* <Image src={bannerimg} alt="hero banner" className="mt-5" /> */}
             <Lottie

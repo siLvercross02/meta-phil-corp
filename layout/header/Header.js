@@ -44,7 +44,10 @@ const Header = () => {
                 <NavItem>
                   <NavLink href="#">Products</NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
+                <NavItem>
+                  <NavLink href="/services">Services</NavLink>
+                </NavItem>
+                {/* <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav>
                     Services <i className="fa fa-angle-down m-l-5"></i>
                   </DropdownToggle>
@@ -58,7 +61,7 @@ const Header = () => {
                     <DropdownItem divider />
                     <DropdownItem>One more separated link</DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown> */}
                 <NavItem>
                   <a className="btn btn-info" href="#">
                     Contact Us

@@ -1,0 +1,45 @@
+.services_section {
+  margin-top: 10rem;
+}
+
+.services_container {
+  display: grid;
+  margin-bottom: 4.5rem;
+  gap: 2rem;
+}
+
+.services_pinned {
+  position: relative;
+  display: block;
+}
+
+.services_title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+}
+
+.services_sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+.services_cardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.services_cardSub {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+.menu_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+}
