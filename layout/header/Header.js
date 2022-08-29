@@ -63,7 +63,7 @@ const Header = () => {
                   </DropdownMenu>
                 </UncontrolledDropdown> */}
                 <NavItem>
-                  <a className="btn btn-info" href="#">
+                  <a className="btn btn-info" href="/contact">
                     Contact Us
                   </a>
                 </NavItem>

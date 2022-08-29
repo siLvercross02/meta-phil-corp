@@ -143,12 +143,14 @@ export default function Section() {
                   <Col md={7} lg={7} xs={7}>
                     <Row className="mb-3">
                       <Col>
-                        <p>Specific Business Consultancy</p>
-                        <p>
+                        <p className={styles.services_cardTitle}>
+                          Specific Business Consultancy
+                        </p>
+                        <p className={styles.services_cardSub}>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry.
                         </p>
-                        <p>Learn More</p>
+                        <p className={styles.services_learn}>Learn More</p>
                       </Col>
                     </Row>
                   </Col>
@@ -172,12 +174,14 @@ export default function Section() {
                   <Col md={7} lg={7} xs={7}>
                     <Row className="mb-3">
                       <Col>
-                        <p>Government Delinquency Process and Consultancy</p>
-                        <p>
+                        <p className={styles.services_cardTitle}>
+                          Government Delinquency Process and Consultancy
+                        </p>
+                        <p className={styles.services_cardSub}>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry.
                         </p>
-                        <p>Learn More</p>
+                        <p className={styles.services_learn}>Learn More</p>
                       </Col>
                     </Row>
                   </Col>

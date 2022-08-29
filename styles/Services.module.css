@@ -14,27 +14,34 @@
 }
 
 .services_title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: #000;
 }
 
 .services_sub {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #8f8f8f;
 }
 
 .services_cardTitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #000;
+  margin-top: 1rem;
 }
 
 .services_cardSub {
   font-size: 16px;
   font-weight: 400;
   color: #8f8f8f;
+}
+
+.services_learn {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
 }
 
 .menu_title {
