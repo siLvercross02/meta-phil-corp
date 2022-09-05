@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Section from "../view/pages/services/Section";
+import Details from "../../view/pages/services/ServiceDetails";
 
-export default function services() {
+export default function servicesDetails() {
   return (
     <div>
       <Head>
@@ -11,7 +11,7 @@ export default function services() {
         <link rel="icon" href="/logo_2.jpg" />
       </Head>
       <div className="wrapper">
-        <Section />
+        <Details />
       </div>
     </div>
   );

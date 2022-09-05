@@ -1,64 +1,155 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, CardImg } from "reactstrap";
+import Link from "next/link";
+import Lottie from "lottie-react";
+import { Container, Row, Col, Card, CardImg, CardBody } from "reactstrap";
 import { Menu } from "antd";
 
 import styles from "../../../styles/Services.module.css";
 
-export default function Section() {
-  const [current, setCurrent] = useState("general");
+import WebDev from "../../../public/json/web-dev.json";
+import MobileDev from "../../../public/json/mobile-dev.json";
+import DeskDev from "../../../public/json/desktop-app.json";
+import ApiDev from "../../../public/json/api-dev.json";
+import DatabaseDev from "../../../public/json/database-dev.json";
 
-  const items = [
+export default function Section() {
+  const [current, setCurrent] = useState("structureCabling");
+  const [collapsed, setCollapsed] = useState(false);
+
+  const menuItems = [
     {
-      label: "General Business Consultancy",
-      key: "general",
+      key: "software",
+      label: "Software Development Services",
+      children: [
+        {
+          key: "sf1",
+          label: "Web Development",
+        },
+        {
+          key: "sf2",
+          label: "Mobile Development",
+        },
+        {
+          key: "sf3",
+          label: "Desktop Application",
+        },
+        {
+          key: "sf4",
+          label: "API Development",
+        },
+        {
+          key: "sf5",
+          label: "Database Development",
+        },
+      ],
     },
     {
-      label: "Specific Business Consultancy",
-      key: "specific",
+      key: "structureCabling",
+      label: "Structured Cabling Services",
+      children: [
+        {
+          key: "sc1",
+          label: "Structure cabling design & installation",
+        },
+        {
+          key: "sc2",
+          label: "Fiber optic cabling",
+        },
+        {
+          key: "sc3",
+          label: "Data network cabling",
+        },
+        {
+          key: "sc4",
+          label: "Coaxial cabling",
+        },
+        {
+          key: "sc5",
+          label: "Patch panel termination",
+        },
+      ],
+    },
+
+    {
+      key: "solarPower",
+      label: "Solar Power System Services",
+      children: [
+        {
+          key: "sp1",
+          label: "Off-grid means not linked to the general power grid.",
+        },
+        {
+          key: "sp2",
+          label: "On-grid means linked to the general power grid",
+        },
+      ],
+    },
+
+    {
+      key: "services",
+      label: "Professional Services",
+      children: [
+        {
+          label: "General Business Consultancy",
+          key: "general",
+        },
+        {
+          label: "Specific Business Consultancy",
+          key: "specific",
+        },
+        {
+          label: "Government Delinquency Process and Consultancy",
+          key: "government",
+        },
+        {
+          label: "Company Labor and Standards",
+          key: "companyLabor",
+        },
+        {
+          label: "Company Manual Standards",
+          key: "manualStandard",
+        },
+        {
+          label: "Government Permit Processes",
+          key: "permitProcess",
+        },
+        {
+          label: "Import and Export Process",
+          key: "importExport",
+        },
+        {
+          label: "Network Estimation Cost",
+          key: "estimationCost",
+        },
+        {
+          label: "Project Estimation Cost",
+          key: "projectCost",
+        },
+        {
+          label: "Network Design",
+          key: "networkDesign",
+        },
+        {
+          label: "Software Engineering Services",
+          key: "softwareServices",
+        },
+        {
+          label: "Network Professional Troubleshooting Services",
+          key: "networkServices",
+        },
+        {
+          label: "Company Software Provider",
+          key: "softwareProvider",
+        },
+      ],
     },
     {
-      label: "Government Delinquency Process and Consultancy",
-      key: "government",
+      key: "surveillance",
+      label: "Surveillance System Installation",
     },
     {
-      label: "Company Labor and Standards",
-      key: "companyLabor",
-    },
-    {
-      label: "Company Manual Standards",
-      key: "manualStandard",
-    },
-    {
-      label: "Government Permit Processes",
-      key: "permitProcess",
-    },
-    {
-      label: "Import and Export Process",
-      key: "importExport",
-    },
-    {
-      label: "Network Estimation Cost",
-      key: "estimationCost",
-    },
-    {
-      label: "Project Estimation Cost",
-      key: "projectCost",
-    },
-    {
-      label: "Network Design",
-      key: "networkDesign",
-    },
-    {
-      label: "Software Engineering Services",
-      key: "softwareServices",
-    },
-    {
-      label: "Network Professional Troubleshooting Services",
-      key: "networkServices",
-    },
-    {
-      label: "Company Software Provider",
-      key: "softwareProvider",
+      key: "accessControl",
+      label: "Access Control System and Time-in Attendance Installation",
     },
   ];
 
@@ -87,107 +178,104 @@ export default function Section() {
             <p className={styles.menu_title}>Offered Services</p>
             <Menu
               onClick={onClick}
+              defaultOpenKeys={["structureCabling"]}
               selectedKeys={[current]}
-              mode="vertical"
-              items={items}
+              mode="inline"
+              items={menuItems}
+              inlineCollapsed={collapsed}
             />
           </Col>
           <Col md={8} lg={8} xs={12}>
-            <div className={styles.services_container}>
-              <Card>
-                <Row className="align-items-md-center">
-                  <Col md={5} lg={5} xs={5}>
-                    <div className={styles.services_pinned}>
-                      <CardImg
-                        alt="services"
-                        src="https://picsum.photos/900/180"
-                        style={{
-                          height: 180,
-                        }}
-                        top
-                        width="100%"
+            <Row>
+              <Col md={4} lg={4} xs={12}>
+                <Card className={`${styles.card_hover} shadow`}>
+                  <CardBody className={styles.card_padding}>
+                    <div className="mx-auto text-center">
+                      <Lottie
+                        animationData={WebDev}
+                        loop={true}
+                        autoPlay={true}
+                        className={styles.services_vector}
                       />
+                      <p className={styles.services_card_text}>
+                        Web Development
+                      </p>
                     </div>
-                  </Col>
-                  <Col md={7} lg={7} xs={7}>
-                    <Row className="mb-3">
-                      <Col>
-                        <p className={styles.services_cardTitle}>
-                          General Business Consultancy
-                        </p>
-                        <p className={styles.services_cardSub}>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
-                        </p>
-                        <p className={styles.services_learn}>Learn More</p>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Card>
-              <Card>
-                <Row className="align-items-md-center">
-                  <Col md={5} lg={5} xs={5}>
-                    <div className={styles.services_pinned}>
-                      <CardImg
-                        alt="services"
-                        src="https://picsum.photos/900/180"
-                        style={{
-                          height: 180,
-                        }}
-                        top
-                        width="100%"
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md={4} lg={4} xs={12}>
+                <Card className={`${styles.card_hover} shadow`}>
+                  <CardBody className={styles.card_padding}>
+                    <div className="mx-auto text-center">
+                      <Lottie
+                        animationData={MobileDev}
+                        loop={true}
+                        autoPlay={true}
+                        className={styles.services_vector}
                       />
+                      <p className={styles.services_card_text}>
+                        Mobile Development
+                      </p>
                     </div>
-                  </Col>
-                  <Col md={7} lg={7} xs={7}>
-                    <Row className="mb-3">
-                      <Col>
-                        <p className={styles.services_cardTitle}>
-                          Specific Business Consultancy
-                        </p>
-                        <p className={styles.services_cardSub}>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
-                        </p>
-                        <p className={styles.services_learn}>Learn More</p>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Card>
-              <Card>
-                <Row className="align-items-md-center">
-                  <Col md={5} lg={5} xs={5}>
-                    <div className={styles.services_pinned}>
-                      <CardImg
-                        alt="services"
-                        src="https://picsum.photos/900/180"
-                        style={{
-                          height: 180,
-                        }}
-                        top
-                        width="100%"
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md={4} lg={4} xs={12}>
+                <Card className={`${styles.card_hover} shadow`}>
+                  <CardBody className={styles.card_padding}>
+                    <div className="mx-auto text-center">
+                      <Lottie
+                        animationData={DeskDev}
+                        loop={true}
+                        autoPlay={true}
+                        className={styles.services_vector}
                       />
+                      <p className={styles.services_card_text}>
+                        Desktop Application
+                      </p>
                     </div>
-                  </Col>
-                  <Col md={7} lg={7} xs={7}>
-                    <Row className="mb-3">
-                      <Col>
-                        <p className={styles.services_cardTitle}>
-                          Government Delinquency Process and Consultancy
-                        </p>
-                        <p className={styles.services_cardSub}>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
-                        </p>
-                        <p className={styles.services_learn}>Learn More</p>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Card>
-            </div>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+
+            <Row className="mt-3">
+              <Col md={4} lg={4} xs={12}>
+                <Card className={`${styles.card_hover} shadow`}>
+                  <CardBody className={styles.card_padding}>
+                    <div className="mx-auto text-center">
+                      <Lottie
+                        animationData={ApiDev}
+                        loop={true}
+                        autoPlay={true}
+                        className={styles.services_vector}
+                      />
+                      <p className={styles.services_card_text}>
+                        API Development
+                      </p>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md={4} lg={4} xs={12}>
+                <Card className={`${styles.card_hover} shadow`}>
+                  <CardBody className={styles.card_padding}>
+                    <div className="mx-auto text-center">
+                      <Lottie
+                        animationData={DatabaseDev}
+                        loop={true}
+                        autoPlay={true}
+                        className={styles.services_vector}
+                      />
+                      <p className={styles.services_card_text}>
+                        Database Development
+                      </p>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

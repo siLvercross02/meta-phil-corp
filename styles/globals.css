@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fs-xl {
+  font-size: 20px;
+}

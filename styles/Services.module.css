@@ -25,6 +25,14 @@
   color: #8f8f8f;
 }
 
+.services_details {
+  font-size: 20px;
+  font-weight: 400;
+  color: #8f8f8f;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
 .services_cardTitle {
   font-size: 20px;
   font-weight: 600;
@@ -49,4 +57,30 @@
   font-weight: 600;
   color: #000;
   text-transform: uppercase;
+}
+
+.services_card_text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #565973;
+  margin-top: 10px;
+}
+
+.services_vector {
+  display: flex;
+  width: 100%;
+  height: 150px;
+}
+
+.card_padding {
+  padding: 1rem !important;
+}
+
+.card_hover {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card_hover:hover {
+  transform: translateY(-0.5rem) !important;
 }
