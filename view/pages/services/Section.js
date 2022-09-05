@@ -178,7 +178,7 @@ export default function Section() {
             <p className={styles.menu_title}>Offered Services</p>
             <Menu
               onClick={onClick}
-              defaultOpenKeys={["structureCabling"]}
+              defaultOpenKeys={["software"]}
               selectedKeys={[current]}
               mode="inline"
               items={menuItems}
