@@ -11,9 +11,9 @@ const TeamComponent = () => {
             <Col md="7" className="text-center">
               <h2 className="title">Management Team</h2>
               <h6 className="subtitle">
-                You can relay on our amazing features list and also our customer
-                services will be great experience for you without doubt and in
-                no-time
+                Providing Professional Service Excellence in Leading
+                Technological Advancement and Innovation for Businesses in the
+                Country
               </h6>
             </Col>
           </Row>
@@ -48,12 +48,12 @@ const TeamComponent = () => {
                 </Col>
                 <Col md="12">
                   <div className="p-t-10">
-                    <h5 className="title font-medium">Michael Doe</h5>
-                    <h6 className="subtitle">Property Specialist</h6>
-                    <p>
+                    <h5 className="title font-medium">Mr. Bob A. Aguilar</h5>
+                    <h6 className="subtitle">Chairman and President</h6>
+                    {/* <p>
                       You can relay on our amazing features list and also our
                       customer services will be great experience.
-                    </p>
+                    </p> */}
                   </div>
                 </Col>
               </Row>
@@ -88,12 +88,14 @@ const TeamComponent = () => {
                 </Col>
                 <Col md="12">
                   <div className="p-t-10">
-                    <h5 className="title font-medium">Michael Doe</h5>
-                    <h6 className="subtitle">Property Specialist</h6>
-                    <p>
+                    <h5 className="title font-medium">
+                      Mr. JOHN BENIDICT O. CANG
+                    </h5>
+                    <h6 className="subtitle">Executive Secretary</h6>
+                    {/* <p>
                       You can relay on our amazing features list and also our
                       customer services will be great experience.
-                    </p>
+                    </p> */}
                   </div>
                 </Col>
               </Row>
@@ -128,12 +130,14 @@ const TeamComponent = () => {
                 </Col>
                 <Col md="12">
                   <div className="p-t-10">
-                    <h5 className="title font-medium">Michael Doe</h5>
-                    <h6 className="subtitle">Property Specialist</h6>
-                    <p>
+                    <h5 className="title font-medium">
+                      Mr. MATTHEW H. BASILIO
+                    </h5>
+                    <h6 className="subtitle">Executive Director</h6>
+                    {/* <p>
                       You can relay on our amazing features list and also our
                       customer services will be great experience.
-                    </p>
+                    </p> */}
                   </div>
                 </Col>
               </Row>
@@ -168,12 +172,16 @@ const TeamComponent = () => {
                 </Col>
                 <Col md="12">
                   <div className="p-t-10">
-                    <h5 className="title font-medium">Michael Doe</h5>
-                    <h6 className="subtitle">Property Specialist</h6>
-                    <p>
+                    <h5 className="title font-medium">
+                      Mr. ABET M. UGDORACION
+                    </h5>
+                    <h6 className="subtitle">
+                      Director for Operation and Procurement
+                    </h6>
+                    {/* <p>
                       You can relay on our amazing features list and also our
                       customer services will be great experience.
-                    </p>
+                    </p> */}
                   </div>
                 </Col>
               </Row>

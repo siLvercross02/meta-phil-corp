@@ -23,8 +23,8 @@ const CustomComponents = () => {
       <Banner2 />
       <FeatureComponent />
       <PortfolioComponent />
-      <PricingComponent />
-      <BlogComponent />
+      {/* <PricingComponent /> */}
+      {/* <BlogComponent /> */}
     </div>
   );
 };

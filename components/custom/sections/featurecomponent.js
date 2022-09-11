@@ -65,7 +65,7 @@ const FeatureComponent = () => {
           </Row>
         </Container>
       </div>
-      <div className="bg-light spacer feature20 up">
+      {/* <div className="bg-light spacer feature20 up">
         <Container>
           <Row className="justify-content-center">
             <Col md="7" className="text-center">
@@ -197,8 +197,8 @@ const FeatureComponent = () => {
             </Col>
           </Row>
         </Container>
-      </div>
-      <div className="spacer ">
+      </div> */}
+      <div>
         <Container className="feature30">
           <Row>
             <Col lg="10">

@@ -26,7 +26,7 @@ const PortfolioComponent = () => {
           </Row>
         </Container>
       </div> */}
-      <div>
+      <div className="spacer">
         <Container>
           <Row className="justify-content-center">
             <Col md="7" className="text-center">

@@ -23,7 +23,7 @@ const Header = () => {
   const router = useRouter();
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="topbar" id="top">
+    <div className="topbar shadow" id="top">
       <div className="header1 po-relative bg-light">
         <Container>
           <Navbar className="navbar-expand-lg h1-nav">
@@ -34,34 +34,35 @@ const Header = () => {
               <span className="ti-menu text-white"></span>
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id="header1">
-              <Nav navbar className="ml-auto mt-2 mt-lg-0">
+              <Nav
+                navbar
+                className="navbar-nav-hover ml-auto mt-2 mt-lg-0 meta-menu"
+              >
                 <NavItem className="active">
                   <NavLink href="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/about">About Us</NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                   <NavLink href="#">Products</NavLink>
-                </NavItem>
-                <NavItem>
+                </NavItem> */}
+                {/* <NavItem>
                   <NavLink href="/services">Services</NavLink>
-                </NavItem>
-                {/* <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav>
-                    Services <i className="fa fa-angle-down m-l-5"></i>
-                  </DropdownToggle>
-                  <DropdownMenu className="b-none animated fadeInUp">
-                    <DropdownItem>Action</DropdownItem>
-                    <DropdownItem>Another action</DropdownItem>
-                    <DropdownItem>Something else here</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Something else here</DropdownItem>
-                    <DropdownItem>Separated link</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>One more separated link</DropdownItem>
+                </NavItem> */}
+                <UncontrolledDropdown nav>
+                  <DropdownToggle nav>Services</DropdownToggle>
+                  <DropdownMenu
+                    className="b-none animated fadeInUp shadow"
+                    right
+                  >
+                    <DropdownItem>
+                      <Link href="/services/professionalServices">
+                        Professional Services
+                      </Link>
+                    </DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown> */}
+                </UncontrolledDropdown>
                 <NavItem>
                   <a className="btn btn-info" href="/contact">
                     Contact Us

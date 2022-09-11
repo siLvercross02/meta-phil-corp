@@ -16,7 +16,7 @@
 .services_title {
   font-size: 30px;
   font-weight: 600;
-  color: #000;
+  color: #2c73cb;
 }
 
 .services_sub {
@@ -83,4 +83,31 @@
 
 .card_hover:hover {
   transform: translateY(-0.5rem) !important;
+}
+
+.services_title_new {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px;
+  color: rgb(31, 30, 30);
+}
+
+.services_text_new {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #8f8f8f;
+}
+
+.services_sub_new {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: rgb(31, 30, 30);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.services_ul_new {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #8f8f8f;
 }

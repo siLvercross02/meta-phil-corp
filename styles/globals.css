@@ -18,3 +18,57 @@ a {
 .fs-xl {
   font-size: 20px;
 }
+
+.ant-menu {
+  font-size: 13px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
+  padding: 0 10px !important;
+}
+
+.ant-menu-item .ant-menu-item-icon {
+  font-size: 16px !important;
+}
+
+.h1-nav .navbar-nav .nav-item .nav-link {
+  font-weight: 700 !important;
+  color: #000 !important;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+}
+
+.h1-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #0164d3 !important;
+}
+
+.navbar-nav.navbar-nav-hover .dropdown-menu {
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transform: translate(0, 10px) perspective(200px) rotateX(-2deg);
+  transition: visibility 0.25s, opacity 0.25s, transform 0.25s;
+  animation: none;
+}
+
+.navbar-nav.navbar-nav-hover .nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translate(0, 0);
+  animation: none;
+}
+
+.meta-menu .dropdown-item {
+  font-weight: 500 !important;
+  color: #000 !important;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+}
+
+.meta-menu .dropdown-item:hover {
+  color: #0164d3 !important;
+}
