@@ -50,12 +50,15 @@ const Header = () => {
                 {/* <NavItem>
                   <NavLink href="/services">Services</NavLink>
                 </NavItem> */}
-                <UncontrolledDropdown nav>
+                <UncontrolledDropdown nav className="link-menu" inNavbar>
                   <DropdownToggle nav>Services</DropdownToggle>
                   <DropdownMenu
                     className="b-none animated fadeInUp shadow"
                     right
                   >
+                    <DropdownItem>
+                      <Link href="/services">Offered Services</Link>
+                    </DropdownItem>
                     <DropdownItem>
                       <Link href="/services/professionalServices">
                         Professional Services
