@@ -1,12 +1,6 @@
 /* eslint-disable */
 import React from "react";
 import { Row, Col, Container, Card, CardBody } from "reactstrap";
-import Image from "next/image";
-import img1 from "../../../assets/images/features/feature13/img1.jpg";
-import img2 from "../../../assets/images/features/feature13/img2.jpg";
-import img3 from "../../../assets/images/features/feature13/img3.jpg";
-import img4 from "../../../assets/images/features/feature13/img4.jpg";
-import img5 from "../../../assets/images/features/feature30/feature-img.jpg";
 
 const FeatureComponent = () => {
   return (
@@ -65,145 +59,12 @@ const FeatureComponent = () => {
           </Row>
         </Container>
       </div>
-      {/* <div className="bg-light spacer feature20 up">
-        <Container>
-          <Row className="justify-content-center">
-            <Col md="7" className="text-center">
-              <span className="label label-info label-rounded">Feature 2</span>
-              <h2 className="title">Awesome with Extra Ordinary Flexibility</h2>
-              <h6 className="subtitle">
-                You can relay on our amazing features list and also our customer
-                services will be great experience for you without doubt and in
-                no-time
-              </h6>
-            </Col>
-          </Row>
-          <Row className="wrap-feature-20">
-            <Col lg="6">
-              <Card>
-                <Row>
-                  <Col md="8">
-                    <CardBody className="d-flex no-block">
-                      <div className="m-r-20">
-                        <Image
-                          src={img1}
-                          height="70"
-                          width="100"
-                          className="rounded"
-                          alt="img"
-                        />
-                      </div>
-                      <div>
-                        <h5 className="font-medium">
-                          Make your website in no-time with us.
-                        </h5>
-                      </div>
-                    </CardBody>
-                  </Col>
-                  <Col md="4" className="text-center">
-                    <a href="#" className="text-white linking bg-info">
-                      Lets Talk <i className="ti-arrow-right"></i>
-                    </a>
-                  </Col>
-                </Row>
-              </Card>
-            </Col>
-            <Col lg="6">
-              <Card>
-                <Row>
-                  <Col md="8">
-                    <CardBody className="d-flex no-block">
-                      <div className="m-r-20">
-                        <Image
-                          src={img2}
-                          height="70"
-                          width="100"
-                          className="rounded"
-                          alt="img"
-                        />
-                      </div>
-                      <div>
-                        <h5 className="font-medium">
-                          Make your website in no-time with us.
-                        </h5>
-                      </div>
-                    </CardBody>
-                  </Col>
-                  <Col md="4" className="text-center">
-                    <a href="#" className="text-white linking bg-info">
-                      Lets Talk <i className="ti-arrow-right"></i>
-                    </a>
-                  </Col>
-                </Row>
-              </Card>
-            </Col>
-            <Col lg="6">
-              <Card>
-                <Row>
-                  <Col md="8">
-                    <CardBody className="d-flex no-block">
-                      <div className="m-r-20">
-                        <Image
-                          src={img3}
-                          height="70"
-                          width="100"
-                          className="rounded"
-                          alt="img"
-                        />
-                      </div>
-                      <div>
-                        <h5 className="font-medium">
-                          Make your website in no-time with us.
-                        </h5>
-                      </div>
-                    </CardBody>
-                  </Col>
-                  <Col md="4" className="text-center">
-                    <a href="#" className="text-white linking bg-info">
-                      Lets Talk <i className="ti-arrow-right"></i>
-                    </a>
-                  </Col>
-                </Row>
-              </Card>
-            </Col>
-            <Col lg="6">
-              <Card>
-                <Row>
-                  <Col md="8">
-                    <CardBody className="d-flex no-block">
-                      <div className="m-r-20">
-                        <Image
-                          src={img4}
-                          height="70"
-                          width="100"
-                          className="rounded"
-                          alt="img"
-                        />
-                      </div>
-                      <div>
-                        <h5 className="font-medium">
-                          Make your website in no-time with us.
-                        </h5>
-                      </div>
-                    </CardBody>
-                  </Col>
-                  <Col md="4" className="text-center">
-                    <a href="#" className="text-white linking bg-info">
-                      Lets Talk <i className="ti-arrow-right"></i>
-                    </a>
-                  </Col>
-                </Row>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </div> */}
       <div>
         <Container className="feature30">
           <Row>
             <Col lg="10">
-              <Image
-                src={img5}
+              <img
+                src="/images/feature-img.jpg"
                 className="rounded img-responsive"
                 alt="wrappixel"
               />

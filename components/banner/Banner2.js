@@ -1,8 +1,5 @@
 import React from "react";
-import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
-import Image from "next/image";
-import bannerimg from "../../assets/images/form-banners/banner1/banner-img.png";
 
 const Banner2 = () => {
   return (
@@ -22,7 +19,14 @@ const Banner2 = () => {
             </a>
           </Col>
           <Col lg="6" md="6">
-            <Image src={bannerimg} alt="hero banner" className="mt-5" />
+            <div className="text-center mx-auto">
+              <img
+                src="/images/banner-img.png"
+                alt="hero banner"
+                className="mt-5 img-fluid"
+                style={{ width: "90%" }}
+              />
+            </div>
           </Col>
         </Row>
       </Container>

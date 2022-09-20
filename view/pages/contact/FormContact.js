@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { Container, Row, Col } from "reactstrap";
-import { Form, Input, Button, notification } from "antd";
+// import { Form, Input, notification } from "antd";
 import Lottie from "lottie-react";
 import styles from "../../../styles/Contact.module.css";
 import ContactVector from "../../../public/json/contact-meta.json";
@@ -12,48 +12,48 @@ import {
 } from "react-icons/md";
 
 export default function FormContact() {
-  const [form] = Form.useForm();
-  const [loading, setLoading] = useState(false);
-  const { TextArea } = Input;
+  // const [form] = Form.useForm();
+  // const [loading, setLoading] = useState(false);
+  // const { TextArea } = Input;
 
-  const onFinished = async (value) => {
-    setLoading(true);
-    try {
-      const response = await axios({
-        url: `${process.env.API_URL}/api/contacts`,
-        method: "post",
-        data: {
-          data: {
-            email: `${value.email}`,
-            fullName: `${value.fullName}`,
-            mobileNumber: `${value.mobileNumber}`,
-            message: `${value.message}`,
-          },
-        },
-      });
-      console.log("response", response);
-      setLoading(false);
+  // const onFinished = async (value) => {
+  //   setLoading(true);
+  //   try {
+  //     const response = await axios({
+  //       url: `${process.env.API_URL}/api/contacts`,
+  //       method: "post",
+  //       data: {
+  //         data: {
+  //           email: `${value.email}`,
+  //           fullName: `${value.fullName}`,
+  //           mobileNumber: `${value.mobileNumber}`,
+  //           message: `${value.message}`,
+  //         },
+  //       },
+  //     });
+  //     console.log("response", response);
+  //     setLoading(false);
 
-      notification.open({
-        message: "Success",
-        description: "You have successfully sent your message. Thank you!",
-        placement: "topRight",
-        type: "success",
-      });
+  //     notification.open({
+  //       message: "Success",
+  //       description: "You have successfully sent your message. Thank you!",
+  //       placement: "topRight",
+  //       type: "success",
+  //     });
 
-      window.scrollTo(0, 0);
-    } catch (error) {
-      console.log("error", error);
-      notification.open({
-        message: "Error",
-        description: "You have failed sent your message, Please try again.",
-        placement: "topRight",
-        type: "error",
-      });
-    }
+  //     window.scrollTo(0, 0);
+  //   } catch (error) {
+  //     console.log("error", error);
+  //     notification.open({
+  //       message: "Error",
+  //       description: "You have failed sent your message, Please try again.",
+  //       placement: "topRight",
+  //       type: "error",
+  //     });
+  //   }
 
-    form.resetFields();
-  };
+  //   form.resetFields();
+  // };
 
   return (
     <div className={styles.contact_section}>

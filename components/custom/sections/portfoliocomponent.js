@@ -1,13 +1,6 @@
 /* eslint-disable */
 import React from "react";
 import { Row, Col, Container, Card, CardBody } from "reactstrap";
-import Image from "next/image";
-import img1 from "../../../assets/images/portfolio/img1.jpg";
-import img2 from "../../../assets/images/portfolio/img2.jpg";
-import img3 from "../../../assets/images/portfolio/img3.jpg";
-import img4 from "../../../assets/images/portfolio/img4.jpg";
-import img5 from "../../../assets/images/portfolio/img5.jpg";
-import img6 from "../../../assets/images/portfolio/img6.jpg";
 
 const PortfolioComponent = () => {
   return (
@@ -42,9 +35,9 @@ const PortfolioComponent = () => {
             <Col md="4">
               <Card className="card-shadow">
                 <a href="#" className="img-ho">
-                  <Image
+                  <img
                     className="card-img-top"
-                    src={img1}
+                    src="images/portfolio/img1.jpg"
                     alt="wrappixel kit"
                   />
                 </a>
@@ -59,9 +52,9 @@ const PortfolioComponent = () => {
             <Col md="4">
               <Card className="card-shadow">
                 <a href="#" className="img-ho">
-                  <Image
+                  <img
                     className="card-img-top"
-                    src={img2}
+                    src="images/portfolio/img2.jpg"
                     alt="wrappixel kit"
                   />
                 </a>
@@ -74,9 +67,9 @@ const PortfolioComponent = () => {
             <Col md="4">
               <Card className="card-shadow">
                 <a href="#" className="img-ho">
-                  <Image
+                  <img
                     className="card-img-top"
-                    src={img3}
+                    src="images/portfolio/img3.jpg"
                     alt="wrappixel kit"
                   />
                 </a>
@@ -89,9 +82,9 @@ const PortfolioComponent = () => {
             <Col md="4">
               <Card className="card-shadow">
                 <a href="#" className="img-ho">
-                  <Image
+                  <img
                     className="card-img-top"
-                    src={img4}
+                    src="images/portfolio/img4.jpg"
                     alt="wrappixel kit"
                   />
                 </a>
@@ -104,9 +97,9 @@ const PortfolioComponent = () => {
             <Col md="4">
               <Card className="card-shadow">
                 <a href="#" className="img-ho">
-                  <Image
+                  <img
                     className="card-img-top"
-                    src={img5}
+                    src="images/portfolio/img5.jpg"
                     alt="wrappixel kit"
                   />
                 </a>
@@ -119,9 +112,9 @@ const PortfolioComponent = () => {
             <Col md="4">
               <Card className="card-shadow">
                 <a href="#" className="img-ho">
-                  <Image
+                  <img
                     className="card-img-top"
-                    src={img6}
+                    src="images/portfolio/img6.jpg"
                     alt="wrappixel kit"
                   />
                 </a>

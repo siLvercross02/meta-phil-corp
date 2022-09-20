@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
@@ -16,7 +15,6 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-import logo from "../../assets/images/logos/white-text.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +26,7 @@ const Header = () => {
         <Container>
           <Navbar className="navbar-expand-lg h1-nav">
             <NavbarBrand href="#">
-              <Image src={logo} alt="wrapkit" />
+              <img src="/images/white-text.png" alt="wrapkit" />
             </NavbarBrand>
             <NavbarToggler onClick={toggle}>
               <span className="ti-menu text-white"></span>
