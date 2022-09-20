@@ -24,11 +24,14 @@ const TeamComponent = () => {
                   <div className="card-img-overlay">
                     <ul className="list-inline">
                       <li className="list-inline-item">
-                        <a href="#">
+                        <a
+                          href="https://www.facebook.com/Meta-Phil-Tech-Corporation-111599521577130"
+                          target="_blank"
+                        >
                           <i className="fa fa-facebook"></i>
                         </a>
                       </li>
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a href="#">
                           <i className="fa fa-twitter"></i>
                         </a>
@@ -42,7 +45,7 @@ const TeamComponent = () => {
                         <a href="#">
                           <i className="fa fa-behance"></i>
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </Col>
@@ -58,7 +61,7 @@ const TeamComponent = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg="3" md="6" className="m-b-30">
+            {/* <Col lg="3" md="6" className="m-b-30">
               <Row className="no-gutters">
                 <Col md="12" className="col-md-12 pro-pic t2">
                   <div className="card-img-overlay">
@@ -92,10 +95,6 @@ const TeamComponent = () => {
                       Mr. JOHN BENIDICT O. CANG
                     </h5>
                     <h6 className="subtitle">Executive Secretary</h6>
-                    {/* <p>
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience.
-                    </p> */}
                   </div>
                 </Col>
               </Row>
@@ -134,10 +133,6 @@ const TeamComponent = () => {
                       Mr. MATTHEW H. BASILIO
                     </h5>
                     <h6 className="subtitle">Executive Director</h6>
-                    {/* <p>
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience.
-                    </p> */}
                   </div>
                 </Col>
               </Row>
@@ -178,14 +173,10 @@ const TeamComponent = () => {
                     <h6 className="subtitle">
                       Director for Operation and Procurement
                     </h6>
-                    {/* <p>
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience.
-                    </p> */}
                   </div>
                 </Col>
               </Row>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>

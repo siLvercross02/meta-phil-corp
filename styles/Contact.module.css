@@ -30,7 +30,7 @@
 
 .contact_info {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 30px;
   position: relative;
   padding-left: 30px;

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "antd": "^4.22.7",
+    "axios": "^0.27.2",
     "bootstrap": "4.6.0",
     "lottie-react": "^2.3.1",
     "next": "11.1.2",
@@ -17,6 +18,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.4.0",
+    "react-live-chat-loader": "^2.7.4",
     "reactstrap": "8.10.0",
     "sass": "^1.29.0"
   },
