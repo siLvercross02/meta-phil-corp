@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 
 const Banner2 = () => {
@@ -14,9 +15,11 @@ const Banner2 = () => {
               You share your idea
               <br /> We get it done.
             </h4>
-            <a href="#" className="btn btn-danger m-r-20 btn-md m-t-30 ">
-              Get Started
-            </a>
+            <Link href="/contact" passHref>
+              <a className="btn btn-danger m-r-20 btn-md m-t-30 ">
+                Get Started
+              </a>
+            </Link>
           </Col>
           <Col lg="6" md="6">
             <div className="text-center mx-auto">

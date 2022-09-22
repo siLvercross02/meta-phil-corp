@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Section from "../view/pages/contact/FormContact";
+import Section from "../../view/pages/contact/FormContact";
 
-export default function contact() {
+export default function Contact() {
   return (
     <div>
       <Head>

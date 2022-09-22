@@ -53,10 +53,15 @@ const TeamComponent = () => {
                   <div className="p-t-10">
                     <h5 className="title font-medium">Mr. Bob A. Aguilar</h5>
                     <h6 className="subtitle">Chairman and President</h6>
-                    {/* <p>
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience.
-                    </p> */}
+                    <p className="mb-1 font-13">
+                      12 years working in the Corporate Industry
+                    </p>
+                    <p className="mb-1 font-13">
+                      10 years working as Policy Consultant
+                    </p>
+                    <p className="mb-1 font-13">
+                      8 years working in the Academe
+                    </p>
                   </div>
                 </Col>
               </Row>

@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import Link from "next/link";
 import { Row, Col, Container, Card, CardBody } from "reactstrap";
 
 const FeatureComponent = () => {
@@ -26,14 +27,15 @@ const FeatureComponent = () => {
                   </div>
                   <h5 className="font-medium">Instant Solutions</h5>
                   <p className="m-t-20">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Praesent
-                    tristique pellentesque ipsum.
+                    With our experience in the development of you platforms, we
+                    can offer instant solutions for your business and design
+                    needs.
                   </p>
-                  <a href="#" className="linking text-themecolor">
-                    Explore More<i className="ti-arrow-right"></i>
-                  </a>
+                  <Link href="/services" passHref>
+                    <a className="linking text-themecolor">
+                      Explore More<i className="ti-arrow-right"></i>
+                    </a>
+                  </Link>
                 </CardBody>
               </Card>
             </Col>
@@ -45,14 +47,14 @@ const FeatureComponent = () => {
                   </div>
                   <h5 className="font-medium">Powerful Techniques </h5>
                   <p className="m-t-20">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Praesent
-                    tristique pellentesque ipsum.{" "}
+                    By utilizing the latest technologies and tools, we will be
+                    able to build a platform that meets your business needs.
                   </p>
-                  <a className="linking text-themecolor" href="#">
-                    Explore More <i className="ti-arrow-right"></i>
-                  </a>
+                  <Link href="/services" passHref>
+                    <a className="linking text-themecolor">
+                      Explore More<i className="ti-arrow-right"></i>
+                    </a>
+                  </Link>
                 </CardBody>
               </Card>
             </Col>
