@@ -37,10 +37,14 @@ const Header = () => {
                 className="navbar-nav-hover ml-auto mt-2 mt-lg-0 meta-menu"
               >
                 <NavItem className="active">
-                  <NavLink href="/">Home</NavLink>
+                  <Link href="/" passHref>
+                    <NavLink>Home</NavLink>
+                  </Link>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about">About Us</NavLink>
+                  <Link href="/about" passHref>
+                    <NavLink>About Us</NavLink>
+                  </Link>
                 </NavItem>
                 {/* <NavItem>
                   <NavLink href="#">Products</NavLink>
@@ -65,9 +69,9 @@ const Header = () => {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <a className="btn btn-info" href="/contact">
-                    Contact Us
-                  </a>
+                  <Link href="/contact" passHref>
+                    <a className="btn btn-info">Contact Us</a>
+                  </Link>
                 </NavItem>
               </Nav>
             </Collapse>
