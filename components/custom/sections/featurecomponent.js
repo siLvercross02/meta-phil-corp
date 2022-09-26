@@ -66,7 +66,7 @@ const FeatureComponent = () => {
           <Row>
             <Col lg="10">
               <img
-                src="/images/feature-img.jpg"
+                src="/images/corp-building.jpg"
                 className="rounded img-responsive"
                 alt="wrappixel"
               />
@@ -76,15 +76,15 @@ const FeatureComponent = () => {
                 <CardBody>
                   <div className="p-20">
                     <span className="label label-info label-rounded">
-                      Feature 3
+                      Experience
                     </span>
                     <h3 className="title">
-                      The New way of Making Your Website in mins
+                      We Have 40+ Years Industrial Experiences
                     </h3>
                     <p>
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience. You will love
-                      it for sure.
+                      Our company has over 40 years of combined experience in
+                      information technology, which allows us to provide our
+                      clients with the best services possible.
                     </p>
                     <a
                       className="btn btn-danger btn-md btn-arrow m-t-20"
