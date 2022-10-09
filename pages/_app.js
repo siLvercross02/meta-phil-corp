@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <LiveChatLoaderProvider
         provider="messenger"
-        providerKey="100083374749162"
+        providerKey="111599521577130"
         locale="en_US"
       >
         <Messenger />
