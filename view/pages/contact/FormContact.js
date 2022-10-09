@@ -171,7 +171,7 @@ export default function FormContact() {
               <div>
                 <h3 className={styles.contact_info_title}>Email</h3>
                 <p className={styles.contact_info_text}>
-                  Office: info@metaphiltech.com
+                  Office: inquiry@metaphil-tech.com
                 </p>
               </div>
             </div>
