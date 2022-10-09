@@ -44,7 +44,7 @@ a {
   color: #0164d3 !important;
 }
 
-.navbar-nav.navbar-nav-hover .dropdown-menu {
+/* .navbar-nav.navbar-nav-hover .dropdown-menu {
   opacity: 0;
   display: block;
   pointer-events: none;
@@ -60,7 +60,7 @@ a {
   visibility: visible;
   transform: translate(0, 0);
   animation: none;
-}
+} */
 
 .link-menu a {
   color: #000 !important;
@@ -83,4 +83,14 @@ a {
 
 .meta-menu .dropdown-item:hover {
   color: #0164d3 !important;
+}
+
+.dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 740px) {
+  .navbar-nav .dropdown-menu {
+    margin-bottom: 1rem !important;
+  }
 }

@@ -11,7 +11,7 @@ export default function Home() {
         description:
           "Sorry our website is under construction & launching soon.",
         type: "info",
-        placement: "bottomRight",
+        placement: "bottomLeft",
         duration: 5,
       });
     };

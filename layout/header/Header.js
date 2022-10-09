@@ -29,7 +29,7 @@ const Header = () => {
               <img src="/images/white-text.png" alt="wrapkit" />
             </NavbarBrand>
             <NavbarToggler onClick={toggle}>
-              <span className="ti-menu text-white"></span>
+              <span className="ti-menu"></span>
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id="header1">
               <Nav

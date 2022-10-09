@@ -1,11 +1,19 @@
 /* eslint-disable */
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
+import PrivacyPolicy from "../../components/modals/PrivacyPolicy";
 
 const Footer = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <div className="footer4 b-t spacer">
+      <PrivacyPolicy toggle={toggleModal} visible={modal} />
       <Container>
         <Row>
           <Col lg="3" md="6" className="m-b-30">
@@ -28,24 +36,24 @@ const Footer = () => {
             <p>
               Office :
               <Link href="#">
-                <a className="link">info@metaphiltech.com</a>
+                <a className="link ml-1">inquiry@metaphil-tech.com</a>
               </Link>
               <br />
               Site :
               <Link href="/">
-                <a className="link">metaphiltech.com</a>
+                <a className="link ml-1">https://metaphil-tech.com</a>
               </Link>
             </p>
           </Col>
           <Col lg="3" md="6">
             <h5 className="m-b-20">Social</h5>
             <div className="round-social light">
-              <Link href="#">
+              <Link href="https://www.facebook.com/people/Meta-Phil-Tech-Corporation/100083374749162/">
                 <a className="link">
                   <i className="fa fa-facebook"></i>
                 </a>
               </Link>
-              <Link href="#">
+              {/* <Link href="#">
                 <a className="link">
                   <i className="fa fa-twitter"></i>
                 </a>
@@ -64,7 +72,7 @@ const Footer = () => {
                 <a className="link">
                   <i className="fa fa-instagram"></i>
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </Col>
         </Row>
@@ -78,17 +86,17 @@ const Footer = () => {
                     <a className="link">Meta Phil-Tech Corporation</a>
                   </Link>
                 </div>
-                {/* <div className="links ml-auto m-t-10 m-b-10">
-                  <Link href="#">
+                <div className="links ml-auto m-t-10 m-b-10">
+                  {/* <Link href="#">
                     <a className="p-10 p-l-0">Terms of Use</a>
                   </Link>
                   <Link href="#">
                     <a className="p-10">Legal Disclaimer</a>
-                  </Link>
-                  <Link href="#">
-                    <a className="p-10">Privacy Policy</a>
-                  </Link>
-                </div> */}
+                  </Link> */}
+                  <a className="p-10" onClick={toggleModal}>
+                    Privacy Policy
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>
